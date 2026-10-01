@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Determinant"/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-01 05:37:41 AM"/>
+        <attribute name="created" value="dXNlcjtXSU4tU0YyUVJON1BJR0w7MjAyNi0xMC0wMTswNToyMToxOCBBTTsyNzg3"/>
+        <attribute name="edited" value="dXNlcjtXSU4tU0YyUVJON1BJR0w7MjAyNi0xMC0wMTswNTozNzo0MSBBTTsxOzI4OTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <declare name="det" type="Integer" array="False" size=""/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <declare name="d" type="Integer" array="False" size=""/>
+            <declare name="e" type="Integer" array="False" size=""/>
+            <declare name="f" type="Integer" array="False" size=""/>
+            <declare name="g" type="Integer" array="False" size=""/>
+            <declare name="h" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Matrisin olcusunu daxil edin (2 ve ya 3):&quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n = 2">
+                <then>
+                    <input variable="a"/>
+                    <input variable="b"/>
+                    <input variable="c"/>
+                    <input variable="d"/>
+                    <assign variable="det" expression="a*d - b*c"/>
+                </then>
+                <else>
+                    <input variable="a"/>
+                    <input variable="b"/>
+                    <input variable="c"/>
+                    <input variable="d"/>
+                    <input variable="e"/>
+                    <input variable="f"/>
+                    <input variable="g"/>
+                    <input variable="h"/>
+                    <input variable="i"/>
+                    <assign variable="det" expression="a*(e*i-f*h)-b*(d*i-f*g)+c*(d*h-e*g)"/>
+                </else>
+            </if>
+            <output expression="&quot;Determinant = &quot; &amp; det" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

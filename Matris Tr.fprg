@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Matris Tr"/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-01 05:00:25 AM"/>
+        <attribute name="created" value="dXNlcjtXSU4tU0YyUVJON1BJR0w7MjAyNi0xMC0wMTswNDo0NDoyOSBBTTsyNzkz"/>
+        <attribute name="edited" value="dXNlcjtXSU4tU0YyUVJON1BJR0w7MjAyNi0xMC0wMTswNTowMDoyNSBBTTsxOzI4OTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="j" type="Integer" array="False" size=""/>
+            <declare name="A" type="Integer" array="True" size="9"/>
+            <declare name="Tr" type="Integer" array="True" size="9"/>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <for variable="j" start="0" end="2" direction="inc" step="1">
+                    <input variable="A[i*3+j]"/>
+                </for>
+            </for>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <for variable="j" start="0" end="2" direction="inc" step="1">
+                    <assign variable="Tr[j*3+i]" expression="A[i*3+j]"/>
+                </for>
+            </for>
+            <for variable="i" start="0" end="2" direction="inc" step="1">
+                <output expression="Tr[i*3] &amp; &quot; &quot; &amp; Tr[i*3+1] &amp; &quot; &quot; &amp; Tr[i*3+2]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
